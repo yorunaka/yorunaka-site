@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (i === index) {
                 item.classList.remove('hidden');
                 item.classList.add('block');
-                indicators[i].classList.add('bg-blue-500');
+                indicators[i].classList.add('bg-black');
                 indicators[i].classList.remove('bg-gray-300');
             } else {
                 item.classList.remove('block');
                 item.classList.add('hidden');
                 indicators[i].classList.add('bg-gray-300');
-                indicators[i].classList.remove('bg-blue-500');
+                indicators[i].classList.remove('bg-black');
             }
         });
     }
