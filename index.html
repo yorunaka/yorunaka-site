@@ -11,12 +11,12 @@
 <section class="bg-slate-400/25">
 
     <!-- Navbar start -->
-    <nav class=" top-0 left-0 w-full bg-white1/2 shadow-md">
+    <nav class=" top-0 left-0 w-full bg-white1/2 shadow-md" id="home">
         <div class="container">
             <div class="flex flex-wrap items-center justify-center py-4">
                     <ul class="flex space-x-5">
                         <li><a href="#home" class="text-sm font-normal text-slate-800 hover:text-blue-600">Home</a></li>
-                        <li><a href="#home" class="text-sm font-normal text-slate-800 hover:text-blue-600">Blog</a></li>
+                        <li><a href="/blog.html" class="text-sm font-normal text-slate-800 hover:text-blue-600">Blog</a></li>
                     </ul>
             </div>
         </div>
@@ -39,8 +39,9 @@
                             Coding 4 Fun!
                         </p>
                     </p>
-                    <a href="#about" class="font-semibold text-base bg-sky-400 text-white px-6 py-3 rounded-2xl hover:bg-blue-600">Contact Me</a>
+                    <a href="#about" class="font-semibold text-base bg-sky-400 text-white px-6 py-3 rounded-xl hover:bg-blue-600">Contact Me</a>
                 </div>
+                
             </div>
         </div>
     </section>     
@@ -51,11 +52,11 @@
         <div class="container">
             <div class="w-full flex flex-wrap">
                 <div class="self-start px-4 lg:mt-20 lg:w-1/2">
-                    <img src="/img/portrait.png" alt="portrait" class="mx-auto lg:max-w-md">
+                    <img src="/img/portrait.png" alt="portrait" class="mx-auto lg:max-w-lg">
                 </div>
                 <div class="self-end px-4 pt-6 lg:mb-40 lg:w-1/2">
                     <h1 class="text-2xl font-semibold mb-3 lg:text-4xl">About Me</h1>
-                    <p class="leading-relaxed font-normal">
+                    <p class="leading-relaxed font-normal lg:mr-28">
                         My name is Vincent Louis Fernando. I'm currently enrolled in a Computer Science major at the Universitas Negeri Surabaya. I'm a developer who has interest at doing fun AI stuff, web development, UI/UX, and graphic design. I'm a gamer and technology enthusiast. I'm a fast learner and I'm always eager to learn new things. I'm a hard worker and always willing to put in extra effort to get the job done. I'm also ready for collaborative environment and I'm always open to work in a team.
                     </p>
                 </div>
@@ -88,7 +89,7 @@
                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/python.png" alt="python"/>
                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
                             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/c-sharp-logo.png" alt="c-sharp-logo"/>
-                            <img width="48" height="48" src="https://img.icons8.com/color/48/golang.png" alt="golang"/>
+                            <!-- <img width="48" height="48" src="https://img.icons8.com/color/48/golang.png" alt="golang"/> -->
                         </div>
                     </div>
                     <!-- Item 2 -->
@@ -187,33 +188,37 @@
         <div class="flex flex-wrap">
                 <div class="w-full self-center px-4">
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+                        <!-- project 1 -->
                         <div class="bg-white rounded-lg shadow-lg">
                             <img src="/img/project-1.png" alt="" class="w-full rounded-t-lg">
                             <div class="p-4">
                                 <h1 class="text-xl font-semibold">SakuyaAI</h1>
                                 <h2 class="text-sm">Python</h2>
                                 <p class="text-sm font-normal mt-1 mb-2 leading-tight">My personal project to create a local multimodel languange chatbot using Python and StreamLit. Still WIP</p>
-                                <a href="#" class="text-sm font-semibold text-blue-600">View Project</a>
+                                <a href="https://github.com/yorunaka/SakuyaAI" class="text-sm font-semibold text-blue-600">View Project</a>
                             </div>
                         </div>
+                        <!-- project 2 -->
                         <div class="bg-white rounded-lg shadow-lg">
                             <img src="/img/project-2.png" alt="" class="w-full rounded-t-lg">
                             <div class="p-4">
                                 <h1 class="text-xl font-semibold">Warehouse Management</h1>
                                 <h2 class="text-sm">Backend</h2>
                                 <p class="text-sm font-normal mt-1 mb-2 leading-tight">Me and my team was creating a Warehouse Management Website, here I worked as backend dev. This project is also created for our mid term assignment</p>
-                                <a href="#" class="text-sm font-semibold text-blue-600">View Project</a>
+                                <a href="https://github.com/luth-fi02/uts-pbp" class="text-sm font-semibold text-blue-600">View Project</a>
                             </div>
                         </div>
+                        <!-- project 3 -->
                         <div class="bg-white rounded-lg shadow-lg">
                             <img src="/img/project-3.png" alt="" class="w-full rounded-t-lg">
                             <div class="p-4">
                                 <h1 class="text-xl font-semibold">SMAN 1 Weleri Web Remake</h1>
                                 <h2 class="text-sm">Frontend</h2>
                                 <p class="text-sm font-normal mt-1 mb-2 leading-tight">Here, me and my team was asked to remake a government instance website and we choose to remake SMAN 1 Weleri website. I worked as frontend dev. This is also project for late term assignment</p>
-                                <a href="#" class="text-sm font-semibold text-blue-600">View Project</a>
+                                <a href="https://github.com/yorunaka/sman1weleri" class="text-sm font-semibold text-blue-600">View Project</a>
                             </div>
                         </div>
+                        <!-- project 4 -->
                         <div class="bg-white rounded-lg shadow-lg">
                             <img src="/img/project-3.png" alt="" class="w-full rounded-t-lg">
                             <div class="p-4">
@@ -223,6 +228,7 @@
                                 <a href="https://github.com/MuhammadMiftaa/Sign-Extractor-NoLib" class="text-sm font-semibold text-blue-600">View Project</a>
                             </div>
                         </div>
+                        <!-- project 4 -->
                     </div>
                 </div>
             </div>
