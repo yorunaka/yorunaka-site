@@ -636,14 +636,6 @@ video {
   top: 0px;
 }
 
-.left-2 {
-  left: 0.5rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
 .z-30 {
   z-index: 30;
 }
@@ -772,14 +764,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .self-center {
@@ -982,8 +966,8 @@ video {
 }
 
 .separator {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 3px;
   width: 15rem;
   --tw-bg-opacity: 1;
@@ -1031,62 +1015,34 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:max-w-sm {
-    max-width: 24rem;
-  }
-
   .sm\:max-w-xs {
     max-width: 20rem;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:m-5 {
-    margin: 1.25rem;
-  }
-
-  .md\:mr-5 {
-    margin-right: 1.25rem;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
-  }
-
-  .md\:w-1 {
-    width: 0.25rem;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-1\/4 {
-    width: 25%;
   }
 
   .md\:w-auto {
     width: auto;
   }
 
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
   .md\:max-w-sm {
     max-width: 24rem;
   }
 
-  .md\:flex-none {
-    flex: none;
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .md\:max-w-screen-sm {
+    max-width: 640px;
   }
 
   .md\:grid-cols-2 {
@@ -1097,50 +1053,12 @@ video {
     flex-wrap: nowrap;
   }
 
-  .md\:content-center {
-    align-content: center;
-  }
-
-  .md\:items-center {
-    align-items: center;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:justify-items-center {
-    justify-items: center;
-  }
-
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .md\:gap-2 {
     gap: 0.5rem;
   }
 
   .md\:self-start {
     align-self: flex-start;
-  }
-
-  .md\:self-center {
-    align-self: center;
-  }
-
-  .md\:text-center {
-    text-align: center;
-  }
-
-  @media (min-width: 1024px) {
-    .md\:lg\:mt-20 {
-      margin-top: 5rem;
-    }
   }
 }
 
@@ -1157,12 +1075,24 @@ video {
     margin-top: 5rem;
   }
 
+  .lg\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .lg\:hidden {
     display: none;
   }
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
   }
 
   .lg\:max-w-lg {
