@@ -7,11 +7,11 @@
 </p>
 
 > My Portfolio Web
+Make sure node.js is installed
 
-## Install
-
+## Clone this repository
 ```sh
-npm install
+git clone https://github.com/yorunaka/portfolio-web.git
 ```
 
 ## Usage
