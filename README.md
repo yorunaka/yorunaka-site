@@ -14,6 +14,11 @@ Make sure node.js is installed
 git clone https://github.com/yorunaka/portfolio-web.git
 ```
 
+## Install npm
+```sh
+npm install
+```
+
 ## Usage
 
 ```sh
