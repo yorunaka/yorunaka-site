@@ -1029,20 +1029,8 @@ video {
     width: auto;
   }
 
-  .md\:max-w-sm {
-    max-width: 24rem;
-  }
-
-  .md\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .md\:max-w-md {
     max-width: 28rem;
-  }
-
-  .md\:max-w-screen-sm {
-    max-width: 640px;
   }
 
   .md\:grid-cols-2 {
@@ -1071,14 +1059,6 @@ video {
     margin-right: 7rem;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .lg\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
   .lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -1089,10 +1069,6 @@ video {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:max-w-md {
-    max-width: 28rem;
   }
 
   .lg\:max-w-lg {
