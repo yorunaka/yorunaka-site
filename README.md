@@ -11,7 +11,7 @@ Make sure node.js is installed
 
 ## Clone this repository
 ```sh
-git clone https://github.com/yorunaka/portfolio-web.git
+git clone https://github.com/yorunaka/yorunaka-site.git
 ```
 
 ## Install npm
