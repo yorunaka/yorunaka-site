@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,11 @@
     <title>Yorunaka Site</title>
 </head>
 <body>
-<script src="script.js"></script>
 <div id="data">
 <section class="bg-slate-400/25">
 
     <!-- Navbar start -->
-    <nav class=" top-0 left-0 w-full bg-white1/2 shadow-md" id="home">
+    <header class="absolute top-0 left-0 w-full bg-transparent z-10 flex items-center">
         <div class="container">
             <div class="flex flex-wrap items-center justify-center py-4">
                     <ul class="flex space-x-5">
@@ -21,7 +20,7 @@
                     </ul>
             </div>
         </div>
-    </nav>
+    </header>
     <!-- Navbar end -->
 
     <!-- Hero start -->
@@ -43,7 +42,7 @@
                     <a href="#about" class="font-semibold text-base bg-sky-400 text-white px-6 py-3 rounded-xl hover:bg-sky-600 hover:text-sky-200">Contact Me</a>
                 </div>
                 <div class="w-full self-end relative lg:w-1/2">
-                    <div class="absolute bottom-0 -z-10 left-1/2 -translate-x-3/4 opacity-30 md:scale-75 md:-translate-x-3/4 md:translate-y-[100px] lg:opacity-100 lg:z-0 lg:-translate-x-1/2 lg:translate-y-[120px]">
+                    <div class="absolute bottom-0 -z-10 left-1/2 -translate-x-3/4 opacity-30 md:scale-75 md:-translate-x-3/4 md:translate-y-[100px] lg:opacity-100 lg:-z-10 lg:-translate-x-1/2 lg:translate-y-[120px]">
                         <img src="/img/logo.png" alt="logo" class="max-w-full rounded-full lg:scale-100">
                     </div>
                 </div>
@@ -82,7 +81,7 @@
             </div>
         </div>
         <div class="container">
-            <div id="skills-carousel" class="relative w-full " data-carousel="static">
+            <div id="skills-carousel" class="relative w-full " data-carousel="static" data-carousel-loop="true" >
                 <!-- Carousel wrapper -->
                 <div class="relative overflow-hidden rounded-lg">
                     <!-- Item 1 -->
@@ -161,7 +160,7 @@
                 <!-- Slider controls -->
                 <div class="lg:p-10">
                     <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group hover:bg-slate-400/30 focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-slate-800">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/70 group-hover:bg-white/50 focus:ring-4 focus:ring-slate-800">
                             <svg class="w-6 h-6 text-black group-focus:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
@@ -169,7 +168,7 @@
                         </span>
                     </button>
                     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group hover:bg-slate-400/30 focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/70 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
                             <svg class="w-6 h-6 text-black group-focus:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -281,5 +280,6 @@
     <!-- Footer end -->
 </section>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

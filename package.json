@@ -4,16 +4,17 @@
     "description": "",
     "main": "script.js",
     "scripts": {
-      "start": "concurrently \"nodemon server/server.js\""
+        "start": "concurrently \"nodemon server/server.js\""
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "express": "^4.17.1"
+        "express": "^4.17.1"
     },
     "devDependencies": {
-      "nodemon": "^2.0.7",
-      "tailwind": "^4.0.0",
-      "concurrently": "^6.2.0"
-  }
+        "concurrently": "^6.2.0",
+        "nodemon": "^2.0.7",
+        "readme-md-generator": "^1.0.0",
+        "tailwind": "^4.0.0"
+    }
 }

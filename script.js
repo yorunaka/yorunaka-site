@@ -1,3 +1,4 @@
+// server
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/api/data')
         .then(response => response.json())
@@ -6,47 +7,72 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching data:', error));
 });
+// navbar
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+        Window.onscroll = function () {
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselItems = document.querySelectorAll('[data-carousel-item]');
-    const indicators = document.querySelectorAll('[data-carousel-slide-to]');
-    const prevButton = document.querySelector('[data-carousel-prev]');
-    const nextButton = document.querySelector('[data-carousel-next]');
-    let currentItem = 0;
-
-    function showItem(index) {
-        carouselItems.forEach((item, i) => {
-            if (i === index) {
-                item.classList.remove('hidden');
-                item.classList.add('block');
-                indicators[i].classList.add('bg-black');
-                indicators[i].classList.remove('bg-gray-300');
+            if (window.scrollY > fixedNav) {
+                header.classList.add('navbar-fixed');
             } else {
-                item.classList.remove('block');
-                item.classList.add('hidden');
-                indicators[i].classList.add('bg-gray-300');
-                indicators[i].classList.remove('bg-black');
+                header.classList.remove('navbar-fixed');
             }
+        };
+});
+
+
+// carousel
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('#skills-carousel');
+    const carouselItems = carousel.querySelectorAll('[data-carousel-item]');
+    const prevButton = carousel.querySelector('[data-carousel-prev]');
+    const nextButton = carousel.querySelector('[data-carousel-next]');
+    const indicators = carousel.querySelectorAll('[data-carousel-slide-to]');
+    const loop = carousel.getAttribute('data-carousel-loop') === 'true';
+
+    let currentIndex = 0;
+
+    // Function to update the carousel display
+    const updateCarousel = (index) => {
+        carouselItems.forEach((item, i) => {
+            item.classList.toggle('hidden', i !== index);
         });
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('bg-black', i === index);
+            indicator.classList.toggle('bg-gray-300', i !== index);
+        });
+    };
+
+    // Function to move to the next slide
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel(currentIndex);
+    };
+
+    // Function to move to the previous slide
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        updateCarousel(currentIndex);
+    };
+
+    // Event listeners for the navigation buttons
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    // Event listeners for the indicators
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel(currentIndex);
+        });
+    });
+
+    // Auto-loop functionality
+    if (loop) {
+        setInterval(nextSlide, 4000); // Change slide every 3 seconds
     }
 
-    indicators.forEach((indicator, i) => {
-        indicator.addEventListener('click', () => {
-            currentItem = i;
-            showItem(currentItem);
-        });
-    });
-
-    prevButton.addEventListener('click', () => {
-        currentItem = (currentItem > 0) ? currentItem - 1 : carouselItems.length - 1;
-        showItem(currentItem);
-    });
-
-    nextButton.addEventListener('click', () => {
-        currentItem = (currentItem < carouselItems.length - 1) ? currentItem + 1 : 0;
-        showItem(currentItem);
-    });
-
-    showItem(currentItem);
+    // Initial update to show the first slide
+    updateCarousel(currentIndex);
 });
