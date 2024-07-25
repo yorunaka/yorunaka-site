@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
 
-    // Function to update the carousel display
     const updateCarousel = (index) => {
         carouselItems.forEach((item, i) => {
             item.classList.toggle('hidden', i !== index);
@@ -44,23 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Function to move to the next slide
     const nextSlide = () => {
         currentIndex = (currentIndex + 1) % carouselItems.length;
         updateCarousel(currentIndex);
     };
 
-    // Function to move to the previous slide
     const prevSlide = () => {
         currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
         updateCarousel(currentIndex);
     };
 
-    // Event listeners for the navigation buttons
     prevButton.addEventListener('click', prevSlide);
     nextButton.addEventListener('click', nextSlide);
 
-    // Event listeners for the indicators
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             currentIndex = index;
@@ -68,11 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Auto-loop functionality
     if (loop) {
-        setInterval(nextSlide, 4000); // Change slide every 3 seconds
+        setInterval(nextSlide, 4000);
     }
 
-    // Initial update to show the first slide
     updateCarousel(currentIndex);
 });
