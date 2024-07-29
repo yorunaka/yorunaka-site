@@ -10,6 +10,9 @@ module.exports = {
       screen : {
         '2xl' : '1320px',
       },
+      scale : {
+        '175' : '1.75',
+      },
     },
   },
   plugins: [],
