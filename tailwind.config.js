@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['open-sans']
+    },
     container : {
       center: true,
       padding: '16px',
