@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="text/css" href="./src/open-sans.css">
     <title>Yorunaka Site</title>
     <link rel="icon" href="/img/webicon.png" rel="web-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="data">
@@ -20,7 +21,7 @@
             <div class="flex flex-wrap items-center justify-center py-4">
                     <ul class="flex space-x-5">
                         <li><a href="#home" class="text-sm font-normal text-slate-800 hover:text-blue-600 lg:text-lg">Home</a></li>
-                        <li><a href="/blog.html" class="text-sm font-normal text-slate-800 hover:text-blue-600 lg:text-lg">Blog</a></li>
+                        <li><a href="blog.html" class="text-sm font-normal text-slate-800 hover:text-blue-600 lg:text-lg">Blog</a></li>
                     </ul>
             </div>
         </div>
@@ -43,7 +44,7 @@
                             Coding 4 Fun!
                         </p>
                     </p>
-                    <a href="#about" class="font-semibold text-base bg-sky-400 text-white px-6 py-3 rounded-xl hover:bg-sky-600 hover:text-sky-200">Contact Me</a>
+                    <a href="mailto:vincentfernando.work@gmail.com" class="font-semibold text-base bg-sky-400 text-white px-6 py-3 rounded-xl hover:bg-sky-600 hover:text-sky-200 transition ease-in-out duration-300 delay-100">Contact Me</a>
                 </div>
                 <div class="w-full self-end relative lg:w-1/2">
                     <div class="absolute bottom-0 -z-10 left-1/2 -translate-x-3/4 opacity-30 md:scale-75 md:-translate-x-3/4 md:translate-y-[100px] lg:opacity-100 lg:-z-10 lg:-translate-x-[200px] lg:translate-y-[75px]">
@@ -56,7 +57,7 @@
     <!-- Hero end -->
 
     <!-- About start -->
-    <section id="about" class="pt-16 lg:pt-32 pb-16">
+    <section id="about" class="sm:pt-32 lg:pt-32 pb-16">
         <div class="container">
             <div class="w-full flex flex-wrap md:gap-2 md:flex-nowrap">
                 <div class="self-center md:w-auto md:self-start lg:mt-16 lg:w-1/2 lg:self-start">
@@ -243,9 +244,13 @@
                             <img src="/img/project-3.png" alt="" class="w-full rounded-t-lg">
                             <div class="p-4">
                                 <h1 class="text-xl font-semibold">Shizucha</h1>
-                                <h2 class="text-sm">Shizucha</h2>
+                                <h2 class="text-sm">Frontend</h2>
                                 <p class="text-sm font-normal mt-1 mb-2 leading-tight">This is my front end web portfolio using ReactJS and Tailwind CSS. Shizucha is a startup that focused on bringing tea products everywhere and anywhere, here i made the front end for its online shop page.</p>
-                                <a href="https://github.com/yorunaka/react-shizucha" class="text-sm font-semibold text-blue-600">View Project</a>
+                                <div class="w-50%">
+                                    <a href="https://github.com/yorunaka/react-shizucha" class="text-sm font-semibold text-blue-600">View Project</a>
+
+                                    <a href="https://shizucha.pages.dev" class="text-sm font-semibold text-blue-600">View Live</a>
+                                </div>
                             </div>
                         </div>
                     </div>
